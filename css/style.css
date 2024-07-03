@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.wrapper {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    width: 640px;
+    margin: 0 auto;
+}
+
+.about_me {
+    margin-top: 8rem;
+}
+
+.about_me__top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.about_me__profile img {
+    width: 120px;
+}
+
+.about_me__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 5px;
+}
+
+.about_me__details h1 {
+    font-size: 2rem;
+}
+
+.about_me__details p {
+    font-size: 1.2rem;
+}
+
+.about_me__bottom, .about_me__links {
+    margin-top: 2rem;
+}
+
+.about_me__bottom p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.about_me__links {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
