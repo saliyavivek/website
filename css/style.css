@@ -10,16 +10,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    background-color: #0C0F11;
     color: #fff;
+}
+
+body {
+    background-color: #0C0F11;
 }
 
 .wrapper {
     width: 760px;
     margin: 0 auto;
+    height: 5000px;
 }
 
-.navbar {
+.navbar_default {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -27,10 +31,24 @@
     margin-top: 60px;
 }
 
-.navbar a.siteTitle {
+.navbar {
+    width: 50%;
+    background-color: hsla(0, 0%, 100%, .03);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: -60px;
+    padding: 20px;
+    border-radius: 16px;
+    transition: top 0.3s;
+}
+
+.navbar a.siteTitle, .navbar_default a.siteTitle {
     text-decoration: none;
     font-size: 18px;
-    color: #A8ADB2;
+    color: #a5acb3;
     font-weight: 700;
     text-align: center;
     line-height: 0.5rem;
@@ -38,13 +56,13 @@
     text-transform: uppercase;
 }
 
-.navbar .navLink a {
-    color: #A8ADB2;
+.navbar .navLink a, .navbar_default .navLink a {
+    color: #b1b5b9;
     text-decoration: none;
     font-size: 18px;
 }
 
-.navbar a:hover {
+.navbar_default a:hover {
     color: #2966bc;
 }
 
@@ -85,6 +103,11 @@
 
 .about_me__details .about_me__hero h1 a {
     color: #EEF5FC;
+    text-decoration: none;
+}
+
+.about_me__details .about_me__hero h1 a:hover {
+    color: #2966bc;
     text-decoration: none;
 }
 
