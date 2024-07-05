@@ -145,7 +145,7 @@ body {
     font-size: 20px; 
     letter-spacing: 0.12em; 
     margin-bottom: 10px;
-    margin-top: 30px;
+    margin-top: 50px;
 }
 
 #brief_about .brief_about__title {
@@ -166,15 +166,47 @@ body {
     color: #2966bc;
 }
 
-.project .project__title {
+.project .project__title, .edu-title {
     letter-spacing: 0.03em;
     font-weight: 400;
     margin-top: 25px;
 }
 
-.project .project__description p, .brief_about__details p{
+.project .project__description p, .brief_about__details p, .edu-description p span{
     font-size: 17px;
     color: #adb4bb;
     line-height: 1.8rem;
     margin-top: 10px;
+}
+
+.edu-description p{
+    display: inline-block;
+    font-family: Roboto Mono, sans-serif;
+    font-size: .94rem;
+    font-weight: 700;
+    line-height: 1.55rem;
+    color: #4a5568;
+}
+
+.footer {
+    margin-top: 80px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer h3 a{
+    text-decoration: none;
+    font-weight: 400;
+    color: rgb(168, 173, 178);
+    line-height: 1.5rem;
+    font-size: 15px;
+    letter-spacing: 1.3px;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    color: rgb(168, 173, 178);
 }
