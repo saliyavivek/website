@@ -18,9 +18,11 @@ body {
 }
 
 .wrapper {
-    width: 760px;
+    max-width: 760px;
     margin: 0 auto;
-    height: 5000px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px;
 }
 
 .navbar_default {
@@ -39,10 +41,11 @@ body {
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: -60px;
+    top: -100px;
     padding: 20px;
     border-radius: 16px;
     transition: top 0.3s;
+    z-index: 999;
 }
 
 .navbar a.siteTitle, .navbar_default a.siteTitle {
@@ -62,12 +65,12 @@ body {
     font-size: 18px;
 }
 
-.navbar_default a:hover {
+.navbar_default a:hover, .navbar a:hover {
     color: #2966bc;
 }
 
 .about_me {
-    margin-top: 8rem;
+    margin: 120px 0 50px 0;
 }
 
 .about_me__top {
@@ -136,4 +139,42 @@ body {
 
 .about_me__links a.heroSocialGithub:hover {
     color: #d4d4d4;
+}
+
+.section-title {
+    font-size: 20px; 
+    letter-spacing: 0.12em; 
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+#brief_about .brief_about__title {
+    font-size: 2.4rem;
+    margin-bottom: 1.4rem;
+    line-height: 4rem
+}
+
+#projects {
+    color: #EEF5FC;
+}
+
+.project a {
+    text-decoration: none;
+}
+
+.project a:hover {
+    color: #2966bc;
+}
+
+.project .project__title {
+    letter-spacing: 0.03em;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.project .project__description p, .brief_about__details p{
+    font-size: 17px;
+    color: #adb4bb;
+    line-height: 1.8rem;
+    margin-top: 10px;
 }
