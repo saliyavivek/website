@@ -205,6 +205,10 @@ body {
     letter-spacing: 1.3px;
 }
 
+.footer h3 a:hover {
+    color: #2966bc;
+}
+
 .footer-links {
     display: flex;
     align-items: center;
