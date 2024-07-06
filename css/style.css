@@ -13,8 +13,13 @@
     color: #fff;
 }
 
+*::selection {
+    background: #2f4a69;
+}
+
 body {
     background-color: #0C0F11;
+    overflow-x: hidden;
 }
 
 .wrapper {
@@ -123,6 +128,7 @@ body {
 .about_me__links a {
     color: #A8ADB2;
     text-decoration: none;
+    margin-right: 26.5px;
 }
 
 .about_me__links a.heroSocialTwitter:hover {
@@ -205,6 +211,10 @@ body {
     letter-spacing: 1.3px;
 }
 
+.footer .footer-links a {
+    margin-right: 26.5px;
+}
+
 .footer h3 a:hover {
     color: #2966bc;
 }
@@ -213,4 +223,95 @@ body {
     display: flex;
     align-items: center;
     color: rgb(168, 173, 178);
+}
+
+@media (max-width: 850px) {    
+    .wrapper {
+        max-width: 320px;
+        padding: 24px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navbar_default {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        visibility: hidden;
+    }
+
+    .about_me {
+        margin-top: -5px;
+        display: flex;
+    }
+    
+    .about_me__top {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .about_me__details {
+        margin-top: 20px;
+        align-self: flex-start;
+    }
+    
+    .about_me__hero h1 {
+        line-height: 2.7rem;
+        letter-spacing: 0.03em;
+        font-size: 28px;
+    }
+
+    .about_me__details .about_me__hero {
+        width: auto;
+    }
+
+    .about_me__links {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        font-size: 16px;
+        gap: 20px;
+    }
+
+    .section-title {
+        font-size: 17px;
+    }
+
+    #brief_about {
+        margin-top: -20px;
+    }
+
+    #brief_about .brief_about__title {
+        font-size: 1.8rem;
+        /* margin-bottom: 1.4rem; */
+        /* line-height: 4rem */
+    }
+
+    #brief_about .brief_about__details {
+        margin-top: -12px;
+    }
+
+    #projects .project__title, #education .edu-title {
+        font-size: 22px;
+    }
+
+    #education .edu-title {
+        font-size: 19px;
+    }
+
+    .footer {
+        margin-bottom: 0;
+    }
+
+    .footer .footer-links a {
+        margin-right: 10px;
+    }
 }
