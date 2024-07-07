@@ -308,6 +308,7 @@ body {
     }
     
     .about_me__top {
+        margin-top: 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -365,6 +366,10 @@ body {
 
     #education .edu-title {
         font-size: 19px;
+    }
+
+    .project a {
+        text-decoration: underline;
     }
 
     .footer {
