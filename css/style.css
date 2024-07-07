@@ -74,6 +74,10 @@ body {
     color: #2966bc;
 }
 
+.navbar-mobile a {
+    display: none;
+}
+
 .about_me {
     margin: 120px 0 50px 0;
 }
@@ -225,6 +229,12 @@ body {
     color: rgb(168, 173, 178);
 }
 
+@media (max-width: 1500px) {
+    .navbar {
+        display: none;
+    }
+}
+
 @media (max-width: 850px) {    
     .wrapper {
         max-width: 320px;
@@ -256,6 +266,7 @@ body {
         text-align: center;
         letter-spacing: 0.1em;
         color: rgb(168, 173, 178);
+        display: block;
     }
 
     .bar1, .bar2, .bar3 {
@@ -280,16 +291,11 @@ body {
     .openNavLinks {
         position: absolute;
         height: 500%;
-        width: 100%;
+        width: 90%;
         background-color: #0C0F11;
         z-index: 999;
         padding: 60px 0;
-        /* overflow: hidden; */
     }
-
-    /* .openNavLinks::-webkit-scrollbar {
-        display: none;
-    } */
         
     .openNavLinks a {
         font-weight: 700;

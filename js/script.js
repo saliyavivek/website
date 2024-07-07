@@ -17,3 +17,11 @@ bars.addEventListener("click", () => {
   }
   bars.classList.toggle("change");
 });
+
+let navLinks = document.querySelectorAll(".mobile-nav-link");
+for (let i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener("click", () => {
+    openNavbar.style.display = "none";
+    bars.classList.toggle("change");
+  });
+}
