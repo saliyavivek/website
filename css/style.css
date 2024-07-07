@@ -259,24 +259,38 @@ body {
     }
 
     .bar1, .bar2, .bar3 {
-        background-color: #a8adb2;
         width: 30px;
         height: 1.9px;
-        background-color: #333;
+        background-color: #9a9999;
         margin: 5px 0;
-        transition: 1s;
-        -webkit-transition: 1s;
+    }
+
+    .change .bar1 {
+        transform: rotate(-40deg) translate(-2px, 5.5px);
+    }
+
+    .change .bar3 {
+        transform: rotate(40deg) translate(-4px, -8.5px);
+    }
+
+    .change .bar2 {
+        visibility: hidden;
     }
 
     .openNavLinks {
         position: absolute;
-        height: 100%;
-        background-color: #0C0F11;
+        height: 500%;
         width: 100%;
+        background-color: #0C0F11;
         z-index: 999;
         padding: 60px 0;
+        /* overflow: hidden; */
     }
 
+    /* .openNavLinks::-webkit-scrollbar {
+        display: none;
+    } */
+        
     .openNavLinks a {
         font-weight: 700;
         font-size: 26px;
