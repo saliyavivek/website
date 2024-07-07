@@ -243,6 +243,49 @@ body {
         visibility: hidden;
     }
 
+    .navbar-mobile {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: -150px;
+    }
+
+    .navbar-mobile a {
+        text-decoration: none;
+        font-weight: 700;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: rgb(168, 173, 178);
+    }
+
+    .bar1, .bar2, .bar3 {
+        background-color: #a8adb2;
+        width: 30px;
+        height: 1.9px;
+        background-color: #333;
+        margin: 5px 0;
+        transition: 1s;
+        -webkit-transition: 1s;
+    }
+
+    .openNavLinks {
+        position: absolute;
+        height: 100%;
+        background-color: #0C0F11;
+        width: 100%;
+        z-index: 999;
+        padding: 60px 0;
+    }
+
+    .openNavLinks a {
+        font-weight: 700;
+        font-size: 26px;
+        letter-spacing: 1.8px;
+        text-decoration: none;
+        color: #DDE1E7;
+        margin-left: 0px;
+    }
+
     .about_me {
         margin-top: -5px;
         display: flex;
