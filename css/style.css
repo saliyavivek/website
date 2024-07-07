@@ -232,8 +232,8 @@ body {
 
 @media (max-width: 850px) {    
     .wrapper {
-        max-width: 320px;
-        padding: 24px;
+        max-width: 95%;
+        padding: 24px 15px;
     }
 
     .navbar {
