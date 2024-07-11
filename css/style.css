@@ -159,6 +159,11 @@ body {
     line-height: 4rem
 }
 
+.brief_about__details p a {
+    color: inherit;
+    font-style: italic;
+}
+
 #projects {
     color: #EEF5FC;
 }
